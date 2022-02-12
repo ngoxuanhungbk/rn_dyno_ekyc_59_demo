@@ -9,19 +9,19 @@
 import Foundation
 import HeadPoseFramework
 
-@objc(RnDynoEkycModuleViewManager)
-class RnDynoEkycModuleViewManager: RCTViewManager {
+@objc(RNDynoEkycModuleViewManager)
+class RNDynoEkycModuleViewManager: RCTViewManager {
 
-  override func view() -> (RnDynoEkycModuleView) {
-    return RnDynoEkycModuleView()
+  override func view() -> (RNDynoEkycModuleView) {
+    return RNDynoEkycModuleView()
   }
   
   override class func moduleName() -> String! {
-    return "RnDynoEkycModuleView"
+    return "RNDynoEkycModuleView"
   }
 }
 
-class RnDynoEkycModuleView : UIView,ReceiverResultDelegate {
+class RNDynoEkycModuleView : UIView,ReceiverResultDelegate {
     
     func receiverResult(isSuccess: Bool, filePath: String) {
         self.onSuccess?(["isSuccess":isSuccess,
