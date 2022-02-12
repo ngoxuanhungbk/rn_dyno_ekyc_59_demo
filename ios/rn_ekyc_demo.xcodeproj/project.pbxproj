@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,10 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		3CB65905EE6C4885064E5FBD /* Pods_rn_ekyc_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B0D8C0091C55C82C43DAE4 /* Pods_rn_ekyc_demoTests.framework */; };
+		4CE15F6927B7614400101E07 /* RnDynoEkycModuleViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE15F6827B7614400101E07 /* RnDynoEkycModuleViewManager.swift */; };
+		4CE15F9027B7618200101E07 /* RnDynoEkycModuleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE15F8F27B7618200101E07 /* RnDynoEkycModuleViewManager.m */; };
+		4CE15F9327B7620D00101E07 /* HeadPoseFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; };
+		4CE15F9427B7620D00101E07 /* HeadPoseFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55057296D6CBC230536C1D00 /* Pods_rn_ekyc_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19C9192CEAB1588883B46AD /* Pods_rn_ekyc_demo.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -299,6 +303,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4CE15F9527B7620D00101E07 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CE15F9427B7620D00101E07 /* HeadPoseFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -323,6 +341,10 @@
 		3455267192ED539E634AE8B7 /* Pods-rn_ekyc_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_ekyc_demo.release.xcconfig"; path = "Target Support Files/Pods-rn_ekyc_demo/Pods-rn_ekyc_demo.release.xcconfig"; sourceTree = "<group>"; };
 		3D92AA20121544907C03FD5C /* Pods-rn_ekyc_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_ekyc_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_ekyc_demoTests/Pods-rn_ekyc_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4927C6AA02C4678D38B3D004 /* Pods-rn_ekyc_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_ekyc_demoTests.release.xcconfig"; path = "Target Support Files/Pods-rn_ekyc_demoTests/Pods-rn_ekyc_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4CE15F6727B7614400101E07 /* rn_ekyc_demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rn_ekyc_demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4CE15F6827B7614400101E07 /* RnDynoEkycModuleViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnDynoEkycModuleViewManager.swift; sourceTree = "<group>"; };
+		4CE15F8F27B7618200101E07 /* RnDynoEkycModuleViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RnDynoEkycModuleViewManager.m; sourceTree = "<group>"; };
+		4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = HeadPoseFramework.xcframework; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -360,6 +382,7 @@
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
+				4CE15F9327B7620D00101E07 /* HeadPoseFramework.xcframework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				55057296D6CBC230536C1D00 /* Pods_rn_ekyc_demo.framework in Frameworks */,
 			);
@@ -457,6 +480,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				4CE15F6827B7614400101E07 /* RnDynoEkycModuleViewManager.swift */,
+				4CE15F6727B7614400101E07 /* rn_ekyc_demo-Bridging-Header.h */,
+				4CE15F8F27B7618200101E07 /* RnDynoEkycModuleViewManager.m */,
 			);
 			name = rn_ekyc_demo;
 			sourceTree = "<group>";
@@ -545,6 +571,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */,
 				13B07FAE1A68108700A75B9A /* rn_ekyc_demo */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rn_ekyc_demoTests */,
@@ -583,7 +610,6 @@
 				3D92AA20121544907C03FD5C /* Pods-rn_ekyc_demoTests.debug.xcconfig */,
 				4927C6AA02C4678D38B3D004 /* Pods-rn_ekyc_demoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -618,6 +644,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				4CE15F9527B7620D00101E07 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -640,6 +667,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -1069,6 +1099,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4CE15F6927B7614400101E07 /* RnDynoEkycModuleViewManager.swift in Sources */,
+				4CE15F9027B7618200101E07 /* RnDynoEkycModuleViewManager.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1100,6 +1132,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D92AA20121544907C03FD5C /* Pods-rn_ekyc_demoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1107,7 +1140,11 @@
 				);
 				INFOPLIST_FILE = rn_ekyc_demoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1122,11 +1159,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4927C6AA02C4678D38B3D004 /* Pods-rn_ekyc_demoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rn_ekyc_demoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1142,10 +1184,14 @@
 			baseConfigurationReference = D5B459A040A3E0BACAD3940C /* Pods-rn_ekyc_demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = rn_ekyc_demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1153,6 +1199,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rn_ekyc_demo;
+				SWIFT_OBJC_BRIDGING_HEADER = "rn_ekyc_demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1162,9 +1211,13 @@
 			baseConfigurationReference = 3455267192ED539E634AE8B7 /* Pods-rn_ekyc_demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = rn_ekyc_demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -1172,6 +1225,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = rn_ekyc_demo;
+				SWIFT_OBJC_BRIDGING_HEADER = "rn_ekyc_demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
