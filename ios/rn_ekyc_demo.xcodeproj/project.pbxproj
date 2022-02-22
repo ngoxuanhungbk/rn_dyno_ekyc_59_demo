@@ -24,10 +24,10 @@
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		3CB65905EE6C4885064E5FBD /* Pods_rn_ekyc_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B0D8C0091C55C82C43DAE4 /* Pods_rn_ekyc_demoTests.framework */; };
+		4C788AA727C3EBC400A4A56D /* HeadPoseFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; };
+		4C788AA827C3EBC400A4A56D /* HeadPoseFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CE15F6927B7614400101E07 /* RnDynoEkycModuleViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE15F6827B7614400101E07 /* RnDynoEkycModuleViewManager.swift */; };
 		4CE15F9027B7618200101E07 /* RnDynoEkycModuleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE15F8F27B7618200101E07 /* RnDynoEkycModuleViewManager.m */; };
-		4CE15F9327B7620D00101E07 /* HeadPoseFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; };
-		4CE15F9427B7620D00101E07 /* HeadPoseFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE15F9127B7620300101E07 /* HeadPoseFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55057296D6CBC230536C1D00 /* Pods_rn_ekyc_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19C9192CEAB1588883B46AD /* Pods_rn_ekyc_demo.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -304,13 +304,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4CE15F9527B7620D00101E07 /* Embed Frameworks */ = {
+		4C788AA927C3EBC400A4A56D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4CE15F9427B7620D00101E07 /* HeadPoseFramework.xcframework in Embed Frameworks */,
+				4C788AA827C3EBC400A4A56D /* HeadPoseFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,7 +382,7 @@
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
-				4CE15F9327B7620D00101E07 /* HeadPoseFramework.xcframework in Frameworks */,
+				4C788AA727C3EBC400A4A56D /* HeadPoseFramework.xcframework in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				55057296D6CBC230536C1D00 /* Pods_rn_ekyc_demo.framework in Frameworks */,
 			);
@@ -644,7 +644,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				4CE15F9527B7620D00101E07 /* Embed Frameworks */,
+				4C788AA927C3EBC400A4A56D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1134,6 +1134,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V42QV54BXF;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1162,6 +1163,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = V42QV54BXF;
 				INFOPLIST_FILE = rn_ekyc_demoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1187,6 +1189,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = V42QV54BXF;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = rn_ekyc_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1213,6 +1217,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V42QV54BXF;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = rn_ekyc_demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

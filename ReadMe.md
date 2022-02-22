@@ -68,7 +68,9 @@ import {RnDynoEkycModuleView} from './EkycModule'
         faceLeft="Quay trái"
         faceRight="Quay phải"
         blink="Nháy mắt"
-        normal="Nhìn thẳng"/>
+        normal="Nhìn thẳng"
+        initString="Đưa khuôn mặt vào trong camera"
+        sessionToken="Your sessionToken"/>
 ```
 *Lưu ý: 
 - tỉ lệ view phải là 480/640 để camerapreview không bị méo, có thể cho các view khác đè lên

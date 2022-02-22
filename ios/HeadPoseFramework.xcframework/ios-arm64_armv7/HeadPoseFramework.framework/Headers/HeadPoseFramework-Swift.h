@@ -219,6 +219,7 @@ SWIFT_CLASS("_TtC17HeadPoseFramework12DynoEkycView")
 @interface DynoEkycView : UIView <AVCaptureVideoDataOutputSampleBufferDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
@@ -448,6 +449,7 @@ SWIFT_CLASS("_TtC17HeadPoseFramework12DynoEkycView")
 @interface DynoEkycView : UIView <AVCaptureVideoDataOutputSampleBufferDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
 - (void)captureOutput:(AVCaptureOutput * _Nonnull)output didOutputSampleBuffer:(CMSampleBufferRef _Nonnull)sampleBuffer fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 

@@ -93,6 +93,20 @@ class RNDynoEkycModuleView : UIView,ReceiverResultDelegate {
             customView.blinkString = blink
         }
     }
+  
+  @objc var initString: String = "Move face to camera"{
+      didSet{
+          customView.initString = initString
+      }
+  }
+  
+  @objc var sessionToken: String = ""{
+      didSet{
+        if !sessionToken.isEmpty {
+          customView.sesstionToken = sessionToken
+        }
+      }
+  }
     
     @objc var onSuccess: RCTDirectEventBlock? = nil
 

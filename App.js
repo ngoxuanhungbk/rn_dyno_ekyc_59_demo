@@ -6,8 +6,8 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, {Component, useState} from 'react';
+import {Platform, StyleSheet, Text, View, Button} from 'react-native';
 import {RnDynoEkycModuleView} from './EkycModule'
 
 const instructions = Platform.select({
@@ -17,28 +17,47 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+export default function App() {
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <RnDynoEkycModuleView 
-        style={styles.box}
-        onSuccess={(event) => {
-          const { isSuccess, filePath } = event.nativeEvent;
-          console.warn(isSuccess);
-          console.warn(filePath);
-        }}
-        faceUp="Ngửa mặt"
-        faceDown="Cúi mặt"
-        faceLeft="Quay trái"
-        faceRight="Quay phải"
-        blink="Nháy mắt"
-        normal="Nhìn thẳng"/>
-      </View>
-    );
+  const [hidedCamera,setHidedCamera] = useState(false);
+
+  const _onSuccess = (event) => {
+    const { isSuccess, filePath } = event.nativeEvent;
+    console.warn(isSuccess);
+    console.warn(filePath);
+  };
+
+  const _onClick = () => {
+    setHidedCamera(!hidedCamera);
   }
+
+  const _renderCamera = () => {
+    if(hidedCamera){
+      return <View style={styles.box}/>
+    }else{
+      return <RnDynoEkycModuleView
+      style={styles.box}
+      onSuccess={_onSuccess}
+      faceUp="Ngửa mặt"
+      faceDown="Cúi mặt"
+      faceLeft="Quay trái"
+      faceRight="Quay phải"
+      blink="Nháy mắt"
+      normal="Nhìn thẳng"
+      initString="Đưa khuôn mặt vào trong camera"
+      sessionToken="Your sessionToken"
+    />
+    }
+  }
+
+  return (
+    <View style={styles.container}>
+      {_renderCamera()}
+      <Button title='Hide camera'
+        onPress={_onClick}
+      />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({

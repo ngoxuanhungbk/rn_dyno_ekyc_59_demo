@@ -80,6 +80,20 @@ public class DynoEkycViewManager extends SimpleViewManager<View> {
         }
     }
 
+    @ReactProp(name = "initString")
+    public void setInitString(View view,String initString){
+        if(view instanceof MyCustomView){
+            ((MyCustomView)view).updateInitString(initString);
+        }
+    }
+
+    @ReactProp(name = "sessionToken")
+    public void setSessionToken(View view,String sessionToken){
+        if(view instanceof MyCustomView){
+            ((MyCustomView)view).updateSessionToken(sessionToken);
+        }
+    }
+
     @Nullable
     @Override
     public Map getExportedCustomBubblingEventTypeConstants() {
@@ -126,6 +140,14 @@ class MyCustomView extends FrameLayout implements OnReceiverResult {
     }
     public void updateBlinkString(String blink){
         ekycComponentView.setBlinkString(blink);
+    }
+
+    public void updateInitString(String initString){
+        ekycComponentView.updateInitString(initString);
+    }
+
+    public void updateSessionToken(String sessionToken){
+        ekycComponentView.updateSessionToken(sessionToken);
     }
 
     @Override
