@@ -103,7 +103,7 @@ class RNDynoEkycModuleView : UIView,ReceiverResultDelegate {
   @objc var sessionToken: String = ""{
       didSet{
         if !sessionToken.isEmpty {
-          customView.sesstionToken = sessionToken
+          self.customView.sesstionToken = self.sessionToken
         }
       }
   }

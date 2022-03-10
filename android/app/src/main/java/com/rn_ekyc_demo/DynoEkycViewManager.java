@@ -147,6 +147,7 @@ class MyCustomView extends FrameLayout implements OnReceiverResult {
     }
 
     public void updateSessionToken(String sessionToken){
+        Log.e("setFaceUpString",sessionToken);
         ekycComponentView.updateSessionToken(sessionToken);
     }
 
@@ -155,8 +156,6 @@ class MyCustomView extends FrameLayout implements OnReceiverResult {
         WritableMap event = Arguments.createMap();
         event.putBoolean("isSuccess", isSuccess);
         event.putString("filePath", filePath);
-
-        Log.e("setFaceUpString",ekycComponentView.getFaceUpString());
         reactContext.getJSModule(RCTEventEmitter.class)
       .receiveEvent(getId(), "onSuccess", event);
     }
