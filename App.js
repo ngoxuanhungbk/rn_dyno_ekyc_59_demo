@@ -45,7 +45,7 @@ export default function App() {
       blink="Nháy mắt"
       normal="Nhìn thẳng"
       initString="Đưa khuôn mặt vào trong camera"
-      sessionToken="95376c946216e04a57e8061d800ba4da3d67e77693be06d8d98e04a2"
+      sessionToken="Your sessionToken"
     />
     }
   }
